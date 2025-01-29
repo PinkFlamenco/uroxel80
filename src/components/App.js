@@ -24,7 +24,7 @@ const Modal = ({ isOpen, onClose, title, children }) => {
           <div className="mt-6 flex justify-end">
             <button
               onClick={onClose}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
+              className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-4 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
             >
               Cerrar
             </button>
@@ -37,13 +37,13 @@ const Modal = ({ isOpen, onClose, title, children }) => {
 
 // Header Component
 const Header = () => (
-  <header className="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white py-8">
+  <header className="bg-gradient-to-r from-indigo-500 via-purple-500 to-purple-600 text-white py-8">
     <div className="container mx-auto px-4">
-      <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-orange-100">
+      <h1 className="text-5xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-white to-purple-100">
         Uroxel
       </h1>
       <p className="text-2xl text-center mt-4 font-light">
-        Innovación Natural para Tu Bienestar
+        Evolución Natural para tu Vitalidad Diaria
       </p>
     </div>
   </header>
@@ -51,31 +51,31 @@ const Header = () => (
 
 // Hero Component
 const Hero = () => (
-  <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
+  <section className="py-20 bg-gradient-to-b from-purple-50 to-white">
     <div className="container mx-auto px-4 flex flex-wrap items-center">
       <div className="w-full md:w-1/2 mb-8 md:mb-0 transform hover:scale-105 transition-transform duration-500">
         <div className="relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-orange-600 rounded-lg blur opacity-30"></div>
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-400 to-purple-600 rounded-lg blur opacity-30"></div>
           <img 
             src="/product.png" 
-            alt="Uroxel - Innovación Natural" 
+            alt="Uroxel - Evolución Natural" 
             className="relative mx-auto max-w-sm rounded-lg shadow-2xl"
           />
         </div>
       </div>
       <div className="w-full md:w-1/2 text-center md:text-left">
-        <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800">
-          ¡Descubre el Futuro del Bienestar!
+        <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-800">
+          ¡Revoluciona tu Bienestar Natural!
         </h2>
         <p className="text-xl mb-8 text-gray-700">
-          Formulación avanzada con tecnología natural para optimizar tu rendimiento diario
+          Descubre la sinergia perfecta entre ciencia avanzada y sabiduría natural para potenciar tu vitalidad
         </p>
-        <div className="text-3xl font-bold text-orange-600 mb-8">$590 MXN</div>
+        <div className="text-3xl font-bold text-indigo-600 mb-8">$590 MXN</div>
         <button 
           onClick={() => document.getElementById('orderForm').scrollIntoView({ behavior: 'smooth' })}
-          className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-10 py-4 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+          className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-10 py-4 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
         >
-          ¡Obtén el Tuyo Ahora!
+          ¡Descubre la Diferencia!
         </button>
       </div>
     </div>
@@ -86,36 +86,36 @@ const Hero = () => (
 const Benefits = () => {
   const benefitsData = [
     {
-      icon: "🌿",
-      title: "Tecnología Natural",
-      description: "Fórmula avanzada con ingredientes bioactivos de última generación, desarrollada por expertos en bienestar natural"
+      icon: "🔬",
+      title: "Ciencia Avanzada",
+      description: "Fórmula revolucionaria desarrollada por expertos, combinando lo mejor de la investigación moderna con principios naturales"
     },
     {
       icon: "⚡",
-      title: "Máximo Rendimiento",
-      description: "Potencia tu energía y vitalidad con nuestra fórmula exclusiva, respaldada por estudios científicos"
+      title: "Potencia Natural",
+      description: "Activación optimizada de tus recursos naturales para un rendimiento excepcional y sostenible"
     },
     {
-      icon: "🎯",
-      title: "Resultados Garantizados",
-      description: "Eficacia comprobada para tu bienestar diario, con satisfacción garantizada o devolución de tu dinero"
+      icon: "🌟",
+      title: "Calidad Superior",
+      description: "Estándares premium en cada paso del proceso, desde la selección de ingredientes hasta el producto final"
     }
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800">
-          Ventajas Exclusivas
+        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-800">
+          Beneficios Excepcionales
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {benefitsData.map((benefit, index) => (
             <div 
               key={index}
-              className="text-center p-8 rounded-xl bg-gradient-to-b from-white to-orange-50 shadow-xl hover:transform hover:-translate-y-2 transition-all duration-300"
+              className="text-center p-8 rounded-xl bg-gradient-to-b from-white to-purple-50 shadow-xl hover:transform hover:-translate-y-2 transition-all duration-300"
             >
               <div className="text-5xl mb-6">{benefit.icon}</div>
-              <h3 className="text-2xl font-bold mb-4 text-orange-700">{benefit.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-indigo-700">{benefit.title}</h3>
               <p className="text-gray-600">{benefit.description}</p>
             </div>
           ))}
@@ -129,28 +129,28 @@ const Benefits = () => {
 const Ingredients = () => {
   const ingredientsData = [
     {
-      title: "Cúrcuma Elite",
-      description: "Potente antioxidante de máxima pureza, extraído mediante procesos avanzados para mantener sus propiedades intactas"
+      title: "Extracto BioActivo",
+      description: "Complejo natural concentrado que maximiza la absorción y eficacia de los componentes activos"
     },
     {
-      title: "Jengibre Premium",
-      description: "Extracto concentrado de alta biodisponibilidad, cultivado en condiciones óptimas para maximizar sus beneficios"
+      title: "Complejo Vital",
+      description: "Sinergia única de minerales y nutrientes esenciales para potenciar tu energía natural"
     },
     {
-      title: "Zinc Avanzado",
-      description: "Mineral quelado de última generación, con una absorción superior para mejores resultados"
+      title: "Fórmula Avanzada",
+      description: "Combinación científicamente optimizada para resultados superiores y duraderos"
     },
     {
-      title: "Arginina Plus",
-      description: "Aminoácido optimizado de acción prolongada, formulado para una liberación gradual y efectiva"
+      title: "Potenciador Natural",
+      description: "Ingredientes seleccionados para trabajar en armonía con tu cuerpo"
     }
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-white to-orange-50">
+    <section className="py-20 bg-gradient-to-b from-white to-purple-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800">
-          Componentes Premium
+        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-800">
+          Tecnología Avanzada
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {ingredientsData.map((ingredient, index) => (
@@ -158,7 +158,7 @@ const Ingredients = () => {
               key={index}
               className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300"
             >
-              <h3 className="text-2xl font-bold mb-4 text-orange-600">{ingredient.title}</h3>
+              <h3 className="text-2xl font-bold mb-4 text-indigo-600">{ingredient.title}</h3>
               <p className="text-gray-600">{ingredient.description}</p>
             </div>
           ))}
@@ -172,46 +172,46 @@ const Ingredients = () => {
 const Reviews = () => {
   const reviews = [
     {
-      name: "Dr. Miguel A.",
+      name: "Dr. Alejandro R.",
       rating: 5.0,
-      text: "Una innovación excepcional en suplementos naturales. Los resultados son notables desde las primeras semanas. Mis pacientes reportan una mejoría significativa en su bienestar general."
+      text: "Como profesional de la salud, estoy impresionado por la calidad y efectividad de esta fórmula. Mis pacientes reportan resultados excepcionales desde las primeras semanas."
     },
     {
-      name: "Laura B.",
+      name: "María S.",
       rating: 4.9,
-      text: "La calidad premium se nota desde el primer momento. Es exactamente lo que necesitaba para mantener mi ritmo de vida activo. Los resultados superaron mis expectativas."
+      text: "Increíble cómo un producto natural puede marcar tanta diferencia. Mi energía y vitalidad han mejorado notablemente. ¡Totalmente recomendado!"
     },
     {
-      name: "Prof. Roberto C.",
+      name: "Ing. Carlos M.",
       rating: 5.0,
-      text: "La formulación más avanzada que he probado en mis años de investigación. Recomiendo totalmente este producto por sus beneficios comprobados y calidad excepcional."
+      text: "La mejor inversión en mi bienestar. Los resultados son consistentes y la calidad del producto es evidente. Una experiencia transformadora."
     }
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800">
-          Experiencias de Éxito
+        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-800">
+          Testimonios de Éxito
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {reviews.map((review, index) => (
             <div 
               key={index} 
-              className="bg-gradient-to-b from-white to-orange-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
+              className="bg-gradient-to-b from-white to-purple-50 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300"
             >
               <div className="flex items-center mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className={i < Math.floor(review.rating) ? "text-orange-500 fill-current" : "text-gray-300"}
+                    className={i < Math.floor(review.rating) ? "text-indigo-500 fill-current" : "text-gray-300"}
                     size={24}
                   />
                 ))}
                 <span className="ml-3 text-lg text-gray-600">{review.rating}</span>
               </div>
               <p className="mb-6 text-gray-700">{review.text}</p>
-              <p className="font-bold text-orange-600">{review.name}</p>
+              <p className="font-bold text-indigo-600">{review.name}</p>
             </div>
           ))}
         </div>
@@ -230,10 +230,10 @@ const OrderForm = () => {
   };
 
   return (
-    <section id="orderForm" className="py-20 bg-gradient-to-b from-orange-50 to-white">
+    <section id="orderForm" className="py-20 bg-gradient-to-b from-purple-50 to-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-orange-600 to-orange-800">
-          ¡Comienza Tu Transformación!
+        <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-800">
+          ¡Inicia tu Transformación!
         </h2>
         <div className="max-w-md mx-auto">
           <form 
@@ -243,7 +243,7 @@ const OrderForm = () => {
             <div className="mb-8">
               <input
                 type="text"
-                className="name w-full px-6 py-4 border-2 border-orange-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
+                className="name w-full px-6 py-4 border-2 border-indigo-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
                 name="name"
                 maxLength="30"
                 placeholder="Tu nombre completo"
@@ -253,14 +253,14 @@ const OrderForm = () => {
             <div className="mb-8">
               <input
                 type="tel"
-                className="name w-full px-6 py-4 border-2 border-orange-200 rounded-xl focus:border-orange-500 focus:ring-2 focus:ring-orange-200 transition-all"
+                className="name w-full px-6 py-4 border-2 border-indigo-200 rounded-xl focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
                 name="phone"
                 id="phoneNumber"
                 placeholder="Tu número de teléfono"
                 required
               />
             </div>
-            
+
             <input type="hidden" name="pp" value="everad" />
             <input type="hidden" name="flow_id" value="1135205" />
             <input type="hidden" name="offer_id" value="" />
@@ -278,14 +278,14 @@ const OrderForm = () => {
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-xl text-xl font-bold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+              className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-8 py-4 rounded-xl text-xl font-bold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
             >
-              Ordenar Ahora - $590 MXN
+              Solicitar Ahora - $590 MXN
             </button>
             
             <p className="text-sm text-gray-500 mt-6 text-center">
-              Este producto es un suplemento premium y está diseñado para complementar un estilo de vida saludable. 
-              Consulte a su profesional de la salud antes de comenzar cualquier régimen de suplementación.
+              Uroxel es un suplemento natural premium diseñado para optimizar tu bienestar. 
+              Consulta con tu profesional de salud antes de iniciar cualquier régimen de suplementación.
             </p>
           </form>
         </div>
@@ -294,23 +294,23 @@ const OrderForm = () => {
       <Modal
         isOpen={showThankYouModal}
         onClose={() => setShowThankYouModal(false)}
-        title="¡Gracias por tu pedido!"
+        title="¡Felicidades por tu Decisión!"
       >
-        ¡Felicidades por dar el primer paso hacia tu bienestar optimal!
+        ¡Bienvenido a una nueva etapa en tu bienestar personal!
 
-        Tu pedido de Uroxel ha sido recibido con éxito. Nuestro equipo está procesando tu orden con el máximo cuidado y atención a los detalles.
+        Tu pedido de Uroxel ha sido registrado exitosamente. Nuestro equipo especializado está preparando tu pedido con el máximo cuidado y atención.
 
-        Qué sigue:
-        1. Recibirás un correo de confirmación en los próximos minutos
-        2. Un asesor personal se pondrá en contacto contigo en las próximas 24 horas
-        3. Tu pedido será enviado en un empaque discreto y seguro
-        4. Te proporcionaremos el número de seguimiento para que puedas rastrear tu envío
+        Próximos pasos:
+        1. Recibirás la confirmación por correo electrónico en breve
+        2. Un especialista se comunicará contigo en las próximas 24 horas
+        3. Preparación y envío discreto de tu pedido
+        4. Seguimiento personalizado de tu envío
 
-        Si tienes alguna pregunta, no dudes en contactarnos:
-        Email: support@uroxelmax.netlify.app
-        WhatsApp: +52 (55) 1214-5671
+        Estamos aquí para apoyarte:
+        Email: support@uroxelgood.netlify.app
+        WhatsApp: +52 (52) 2234-5672
         
-        ¡Gracias por confiar en Uroxel para tu bienestar!
+        ¡Gracias por elegir Uroxel para optimizar tu bienestar natural!
       </Modal>
     </section>
   );
@@ -324,286 +324,156 @@ const Footer = () => {
     { 
       id: 'privacy', 
       title: 'Política de Privacidad', 
-      content: `Política de Privacidad de Uroxel
+      content: `Compromiso con tu Privacidad en Uroxel
 
-En Uroxel, la privacidad y seguridad de nuestros usuarios son prioridades fundamentales. Esta política detalla cómo recopilamos, utilizamos y protegemos su información personal.
+Tu privacidad y seguridad son fundamentales para nosotros. Entendemos la importancia de proteger tu información personal.
 
-1. Información que Recopilamos:
-- Datos de contacto (nombre, teléfono, correo electrónico)
-- Información de envío
-- Historial de pedidos
-- Preferencias de productos
+Información que Protegemos:
+• Datos personales de contacto
+• Información de pedidos
+• Preferencias de productos
+• Historial de compras
 
-2. Uso de la Información:
-- Procesamiento de pedidos
-- Mejora de nuestros productos y servicios
-- Comunicación sobre su pedido
-- Atención al cliente personalizada
+Medidas de Protección:
+• Certificado SSL de última generación
+• Servidores seguros certificados
+• Acceso restringido a datos sensibles
+• Monitoreo continuo de seguridad
 
-3. Protección de Datos:
-- Utilizamos encriptación SSL de última generación
-- Acceso restringido a datos personales
-- Sistemas de seguridad actualizados regularmente
+Tus Derechos Incluyen:
+• Acceso a tu información
+• Corrección de datos
+• Eliminación de registros
+• Control de comunicaciones
 
-4. Sus Derechos:
-- Acceso a sus datos personales
-- Corrección de información inexacta
-- Eliminación de sus datos
-- Limitación del procesamiento
-
-Para cualquier consulta sobre privacidad, contáctenos:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
+Para consultas sobre privacidad:
+Email: support@uroxelgood.netlify.app
+WhatsApp: +52 (52) 2234-5672`
     },
     { 
       id: 'terms', 
       title: 'Términos de Servicio', 
-      content: `Términos de Servicio de Uroxel
+      content: `Términos y Condiciones de Uroxel
 
-1. Uso del Servicio
-Al utilizar nuestros servicios, usted acepta estos términos en su totalidad. Nuestros servicios están diseñados para adultos mayores de 18 años.
+Al utilizar nuestros servicios, aceptas los siguientes términos:
 
-2. Productos y Precios
-- Todos los productos están sujetos a disponibilidad
-- Los precios están en Pesos Mexicanos (MXN)
-- Nos reservamos el derecho de modificar precios
-- Todas las promociones tienen términos específicos
+Sobre Nuestros Servicios:
+• Productos exclusivos para mayores de 18 años
+• Precios en Pesos Mexicanos (MXN)
+• Verificación de pedidos por seguridad
+• Disponibilidad sujeta a stock
 
-3. Pedidos y Pagos
-- Los pedidos están sujetos a verificación
-- Aceptamos principales métodos de pago
-- La confirmación del pedido se enviará por email
-- Los pagos se procesan de forma segura
+Política de Compra:
+• Métodos de pago verificados
+• Confirmación automática por email
+• Procesamiento seguro garantizado
+• Facturación disponible
 
-4. Envíos
-- Entrega en 3-5 días hábiles
-- Seguimiento en tiempo real disponible
-- Envío gratuito en pedidos superiores a $1000 MXN
+Envío y Logística:
+• Entrega express nacional
+• Seguimiento en tiempo real
+• Embalaje discreto y seguro
 
-5. Calidad y Garantía
-- Productos de alta calidad garantizada
-- Certificaciones sanitarias vigentes
-- Satisfacción garantizada
-
-6. Servicio al Cliente
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671
-Horario: Lunes a Viernes 9:00-18:00`
+Contacto directo:
+Email: support@uroxelgood.netlify.app
+WhatsApp: +52 (52) 2234-5672`
     },
     { 
-      id: 'returns', 
-      title: 'Garantía de Satisfacción', 
+      id: 'guarantee', 
+      title: 'Garantía Total', 
       content: `Garantía de Satisfacción Uroxel
 
-En Uroxel, estamos comprometidos con su satisfacción total. Nuestra garantía de 30 días le asegura una experiencia sin riesgos.
+Tu satisfacción es nuestra prioridad absoluta.
 
-Política de Devolución:
-1. Garantía de 30 días desde la recepción
-2. Devolución completa del dinero si no está satisfecho
-3. Sin preguntas ni condiciones complicadas
+Garantía Completa:
+• 30 días de garantía total
+• Devolución sin cuestionamientos
+• Reembolso garantizado
+• Proceso simple y rápido
 
 Proceso de Devolución:
-1. Contáctenos dentro de los 30 días
-2. Proporcione su número de pedido
-3. Explique brevemente el motivo
-4. Reciba instrucciones de devolución
-5. Reembolso procesado en 3-5 días hábiles
+1. Contacta a nuestro equipo
+2. Recibe instrucciones personalizadas
+3. Envío gratuito de devolución
+4. Reembolso en 48 horas
 
-Condiciones:
-- Producto en condición original
-- Empaque original cuando sea posible
-- Incluir todos los componentes
-- Gastos de envío cubiertos por Uroxel
+Compromiso de Calidad:
+• Productos verificados
+• Control de calidad estricto
+• Satisfacción asegurada
 
-Contacto para Devoluciones:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
+Contacto para garantías:
+Email: support@uroxelgood.netlify.app
+WhatsApp: +52 (52) 2234-5672`
     },
     { 
       id: 'shipping', 
-      title: 'Envío Premium', 
-      content: `Servicio de Envío Premium Uroxel
+      title: 'Envío Seguro', 
+      content: `Servicio de Envío Uroxel
 
-Ofrecemos el servicio de envío más confiable y rápido para su tranquilidad.
+Garantizamos la entrega segura y discreta de tu pedido.
 
-Detalles del Servicio:
-1. Envío Express Nacional
-   - Entrega en 48-72 horas
-   - Cobertura en toda la República Mexicana
-   - Seguimiento en tiempo real
+Opciones de Envío:
+• Express: 48-72 horas
+• Estándar: 3-5 días hábiles
+• Cobertura nacional completa
 
-2. Características Premium:
-   - Empaque discreto y seguro
-   - Protección contra daños
-   - Seguro de envío incluido
-   - Notificaciones de estado
-   
-3. Costos de Envío:
-   - Envío estándar: $99 MXN
-   - Envío express: $149 MXN
-   - Gratis en compras mayores a $1000 MXN
+Características Premium:
+• Empaque discreto garantizado
+• Protección especial del producto
+• Seguimiento en vivo
+• Seguro incluido
 
-4. Seguimiento de Pedido:
-   - Código de rastreo por email
-   - Actualizaciones por WhatsApp
-   - Soporte dedicado
+Costos de Envío:
+• Express: $149 MXN
+• Estándar: $99 MXN
+• Gratis en compras +$1000 MXN
 
-Para consultas sobre envíos:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
+Información y rastreo:
+Email: support@uroxelgood.netlify.app
+WhatsApp: +52 (52) 2234-5672`
     },
     { 
-      id: 'cookies', 
-      title: 'Política de Cookies', 
-      content: `Política de Cookies de Uroxel
+      id: 'contact', 
+      title: 'Atención Personalizada', 
+      content: `Servicio al Cliente Uroxel
 
-Utilizamos cookies para mejorar su experiencia en nuestro sitio web.
+Estamos para asistirte en todo momento.
 
-1. Tipos de Cookies que Utilizamos:
-- Cookies esenciales: Para el funcionamiento básico
-- Cookies de rendimiento: Para analizar el uso
-- Cookies de funcionalidad: Para recordar preferencias
-- Cookies de publicidad: Para contenido personalizado
-
-2. Gestión de Cookies:
-- Puede controlar las cookies en su navegador
-- Puede rechazar cookies no esenciales
-- La desactivación puede afectar la funcionalidad
-
-3. Uso de la Información:
-- Mejora de la navegación
-- Personalización de contenido
-- Análisis de uso
-- Optimización del sitio
-
-4. Protección de Datos:
-- Datos anónimos
-- No compartimos información personal
-- Cumplimiento con regulaciones
-
-Para más información:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
-    },
-    { 
-      id: 'disclaimer', 
-      title: 'Información Legal', 
-      content: `Información Legal de Uroxel
-
-Aviso Legal Importante:
-
-1. Naturaleza del Producto:
-- Uroxel es un suplemento alimenticio
-- No es un medicamento
-- No está destinado a diagnosticar, tratar, curar o prevenir enfermedades
-- Los resultados pueden variar entre individuos
-
-2. Recomendaciones de Uso:
-- Seguir las instrucciones del empaque
-- Consultar con profesional de salud
-- No exceder la dosis recomendada
-- Mantener fuera del alcance de niños
-
-3. Advertencias:
-- Solo para adultos mayores de 18 años
-- No usar durante embarazo o lactancia
-- Descontinuar uso si presenta reacciones adversas
-- Almacenar en lugar fresco y seco
-
-4. Certificaciones y Cumplimiento:
-- Registro sanitario vigente
-- Fabricación bajo normas GMP
-- Ingredientes de calidad premium
-- Análisis de calidad regulares
-
-Consultas adicionales:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
-    },
-    { 
-      id: 'contacts', 
-      title: 'Centro de Atención', 
-      content: `Centro de Atención al Cliente Uroxel
-
-Estamos aquí para ayudarte con cualquier consulta o asistencia que necesites.
-
-Información de Contacto:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671
+Medios de Contacto:
+Email: support@uroxelgood.netlify.app
+WhatsApp: +52 (52) 2234-5672
 
 Horario de Atención:
-Lunes a Viernes: 9:00 - 18:00
-Sábados: 10:00 - 14:00
-Domingos: Cerrado
+• Lunes a Viernes: 9:00 - 18:00
+• Sábados: 10:00 - 14:00
 
-Tipos de Asistencia:
-- Información de productos
-- Seguimiento de pedidos
-- Asesoría personalizada
-- Devoluciones y garantías
-- Soporte técnico
-- Consultas generales
+Asistencia Disponible:
+• Información de productos
+• Seguimiento de pedidos
+• Asesoría personalizada
+• Soporte técnico
 
 Tiempo de Respuesta:
-- Emails: 24 horas máximo
-- WhatsApp: 2-4 horas
-- Llamadas: Inmediato en horario laboral
+• WhatsApp: 2-4 horas
+• Email: 24 horas máximo
+• Llamadas: Inmediato
 
-¡Tu satisfacción es nuestra prioridad!`
-    },
-    { 
-      id: 'about', 
-      title: 'Nuestra Misión', 
-      content: `Nuestra Misión en Uroxel
-
-En Uroxel, nos dedicamos a revolucionar el bienestar natural a través de la innovación y la excelencia.
-
-Nuestra Historia:
-Fundada por expertos en bienestar natural, Uroxel nació de la visión de crear productos que combinen la sabiduría tradicional con la ciencia moderna.
-
-Nuestros Valores:
-1. Calidad Sin Compromisos
-   - Ingredientes premium
-   - Procesos certificados
-   - Control de calidad riguroso
-
-2. Innovación Constante
-   - Investigación continua
-   - Tecnología de vanguardia
-   - Mejora constante
-
-3. Compromiso con el Cliente
-   - Atención personalizada
-   - Satisfacción garantizada
-   - Transparencia total
-
-4. Responsabilidad Social
-   - Prácticas sustentables
-   - Empaque eco-amigable
-   - Apoyo a la comunidad
-
-Nuestra Visión:
-Ser líderes en soluciones naturales para el bienestar, mejorando la calidad de vida de nuestros clientes a través de productos innovadores y efectivos.
-
-¡Únete a nuestra misión de bienestar!
-
-Contacto:
-Email: support@uroxelmax.netlify.app
-WhatsApp: +52 (55) 1214-5671`
+¡Tu bienestar es nuestra prioridad!`
     }
   ];
 
   const activeModalData = footerLinks.find(link => link.id === activeModal);
 
   return (
-    <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-12">
+    <footer className="bg-gradient-to-r from-gray-900 to-indigo-900 text-white py-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
           {footerLinks.map((link) => (
             <button
               key={link.id}
               onClick={() => setActiveModal(link.id)}
-              className="text-left hover:text-orange-400 transition-colors duration-300"
+              className="text-left hover:text-purple-400 transition-colors duration-300"
             >
               {link.title}
             </button>
@@ -631,12 +501,12 @@ const CookieConsent = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-white shadow-xl p-6 z-40">
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
         <p className="text-gray-700 mb-4 md:mb-0">
-          Utilizamos cookies para mejorar su experiencia en nuestro sitio web.
+          Para mejorar tu experiencia, utilizamos cookies en nuestro sitio web.
         </p>
         <div className="flex gap-4">
           <button
             onClick={() => setShow(false)}
-            className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
+            className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-300"
           >
             Aceptar
           </button>
@@ -651,6 +521,8 @@ const CookieConsent = () => {
     </div>
   );
 };
+
+
 
 const App = () => {
   return (
